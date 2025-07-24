@@ -1,0 +1,98 @@
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url("mainbg.webp");
+    background-size: contain;
+    filter: blur(10px);
+    z-index: -1;
+  
+}
+.inner{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+    background-image: url("mainbg.webp");
+    background-size: Cover; 
+    text-align: center;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+.search-bar{
+    height: 25px;
+    width: 450px;
+    border: 2px solid black;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 0.75rem;
+}
+    .search-icon{
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        padding: 0.5rem;
+    }
+.search button{
+    background-color: transparent;
+}
+.search-bar,.search-icon:hover{
+    cursor: pointer;
+}
+.temp,.city{
+    font-size: 70px;
+    color: aliceblue;
+    position: relative;
+    margin: 20px 0px 10px;
+    font-style: 200;
+    
+}
+.discription{
+
+    color: aliceblue;
+    font-size: 20px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 2rem 1rem 0;
+}
+@media (max-width: 850px) {
+    .search-bar{
+        width:15rem;
+        height: 30px;
+        margin-right: 0.75rem;
+    }
+    .search-icon{
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        padding: 0.5rem;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .temp, .city{
+        font-size: 3rem;
+    }
+    .details{
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+}
